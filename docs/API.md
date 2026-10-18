@@ -18,6 +18,7 @@ Each invoice gets one report line, in input order:
 | `unknown_po` | No order has that number | `0.00` |
 | `vendor_mismatch` | The order belongs to another vendor | `0.00` |
 | `currency_mismatch` | The order is in another currency | `0.00` |
+| `duplicate` | Same vendor and normalized invoice number as an earlier invoice; not reconciled again. The line carries `duplicate_of` (the earlier number as written) | `0.00` |
 
 ## Report (`Report.as_dict()`, and the CLI's output)
 
