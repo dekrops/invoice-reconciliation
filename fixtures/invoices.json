@@ -1,0 +1,8 @@
+[
+  {"vendor_id": "DE811234567", "invoice_number": "INV-2026-0042", "po_number": "PO-2026-0101", "currency": "EUR", "total": "1190.00", "issue_date": "2026-09-30"},
+  {"vendor_id": "DE811234567", "invoice_number": "INV-2026-0043", "po_number": "PO-2026-0102", "currency": "eur", "total": "476.00", "issue_date": "2026-10-01"},
+  {"vendor_id": "ATU12345678", "invoice_number": "R-88017", "po_number": "PO-2026-0117", "currency": "EUR", "total": "2380.05", "issue_date": "2026-10-02"},
+  {"vendor_id": "NL001234567B01", "invoice_number": "F2026/311", "po_number": "PO-2026-0120", "currency": "EUR", "total": "99.99", "issue_date": "2026-10-03"},
+  {"vendor_id": "GB123456789", "invoice_number": "UK-5521", "po_number": "PO-2026-0133", "currency": "EUR", "total": "640.00", "issue_date": "2026-10-04"},
+  {"vendor_id": "DE811234567", "invoice_number": "INV-2026-0050", "po_number": "PO-2026-0199", "currency": "EUR", "total": "12.00", "issue_date": "2026-10-05"}
+]

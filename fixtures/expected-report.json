@@ -1,0 +1,17 @@
+{
+  "lines": [
+    {"invoice_number": "INV-2026-0042", "vendor_id": "DE811234567", "po_number": "PO-2026-0101", "status": "matched", "difference": "0.00"},
+    {"invoice_number": "INV-2026-0043", "vendor_id": "DE811234567", "po_number": "PO-2026-0102", "status": "matched", "difference": "0.00"},
+    {"invoice_number": "R-88017", "vendor_id": "ATU12345678", "po_number": "PO-2026-0117", "status": "amount_mismatch", "difference": "-0.45"},
+    {"invoice_number": "F2026/311", "vendor_id": "NL001234567B01", "po_number": "PO-2026-0120", "status": "matched", "difference": "0.00"},
+    {"invoice_number": "UK-5521", "vendor_id": "GB123456789", "po_number": "PO-2026-0133", "status": "currency_mismatch", "difference": "0.00"},
+    {"invoice_number": "INV-2026-0050", "vendor_id": "DE811234567", "po_number": "PO-2026-0199", "status": "unknown_po", "difference": "0.00"}
+  ],
+  "open_amounts": {
+    "PO-2026-0101": "0.00",
+    "PO-2026-0102": "0.00",
+    "PO-2026-0117": "2380.50",
+    "PO-2026-0120": "0.00",
+    "PO-2026-0133": "640.00"
+  }
+}

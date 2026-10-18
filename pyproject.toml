@@ -1,0 +1,9 @@
+[project]
+name = "invoice-reconciliation"
+version = "0.3.0"
+description = "Reconciles supplier invoices against purchase orders, in exact decimal money."
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.setuptools]
+packages = ["reconcile"]

@@ -1,0 +1,7 @@
+[
+  {"po_number": "PO-2026-0101", "vendor_id": "DE811234567", "currency": "EUR", "amount": "1190.00"},
+  {"po_number": "PO-2026-0102", "vendor_id": "DE811234567", "currency": "EUR", "amount": "476.00"},
+  {"po_number": "PO-2026-0117", "vendor_id": "ATU12345678", "currency": "EUR", "amount": "2380.50"},
+  {"po_number": "PO-2026-0120", "vendor_id": "NL001234567B01", "currency": "EUR", "amount": "99.99"},
+  {"po_number": "PO-2026-0133", "vendor_id": "GB123456789", "currency": "GBP", "amount": "640.00"}
+]
