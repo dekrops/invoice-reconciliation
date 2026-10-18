@@ -48,7 +48,7 @@ class Report:
         }
 
 
-_SEPARATORS = re.compile(r"[\s\-/._\u2010\u2011\u2012\u2013\u2014\u2015\u2212]+")
+_SEPARATORS = re.compile(r"[\s\-/._\u2013]+")
 _NUMBER = re.compile(r"\d+")
 
 
