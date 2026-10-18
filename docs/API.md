@@ -18,6 +18,17 @@ Each invoice gets one report line, in input order:
 | `unknown_po` | No order has that number | `0.00` |
 | `vendor_mismatch` | The order belongs to another vendor | `0.00` |
 | `currency_mismatch` | The order is in another currency | `0.00` |
+| `duplicate` | An earlier invoice of the same vendor has the same number (see below); this one is not reconciled again and `open_amounts` is untouched | `0.00` |
+
+### Duplicates
+
+Two invoices are duplicates when they have the same `vendor_id` and the same invoice number after normalization (`reconcile.model.normalize_invoice_number`):
+
+- Unicode NFKC, then case-insensitive (case-folded);
+- whitespace, `-` `/` `.` `_` and every Unicode dash (`‐ ‑ ‒ – — ― −` and the rest of category Pd) are not significant;
+- leading zeros of each number inside it are not significant. A separator between two numbers still ends the first one: `INV-2026-0042`, `INV-2026-42`, `inv 2026 42`, `INV–2026–0042` and `ＩＮＶ-2026-0042` are the same invoice, `INV-20-2642` is not.
+
+The first invoice in input order is reconciled as usual. Each later duplicate gets a `duplicate` line with an extra key `duplicate_of`: the first invoice's number as it was written. Invoices of different vendors are never duplicates. No other line has a `duplicate_of` key.
 
 ## Report (`Report.as_dict()`, and the CLI's output)
 
